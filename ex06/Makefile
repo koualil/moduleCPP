@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mkoualil <mkoualil@studentf42ffr>          +#+  +:+       +#+         #
+#    By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/07 19:09:35 by mkoualil          #+#    #+#              #
-#    Updated: 2024/10/23 21:40:42 by mkoualil         ###   ########ffr        #
+#    Created: 2024/10/23 17:30:25 by mkoualil          #+#    #+#              #
+#    Updated: 2024/10/24 19:49:36 by mkoualil         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC_FILES = mainfcpp 
-OBJ_FILES = $(SRC_FILES:fcpp=fo)
+SRC_FILES =  main.cpp   Harl.cpp
+OBJ_FILES = $(SRC_FILES:.cpp=.o)
 
-NAME = Replace
+NAME = harlFilter
 CFLAGS = -Wall -Wextra -Werror -std=c++98 
 RM = rm -f
 
@@ -22,7 +22,7 @@ all:	$(NAME)
 $(NAME):$(OBJ_FILES)
 		c++  $(CFLAGS)   $(OBJ_FILES) -o $(NAME)
 					
-%fo : %fcpp  Zombiefhpp
+%.o : %.cpp Harl.hpp
 				c++ -c $(CFLAGS) $< -o $@
 
 clean:	

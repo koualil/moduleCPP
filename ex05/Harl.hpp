@@ -1,38 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/23 19:20:53 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/06 18:31:23 by mkoualil         ###   ########.fr       */
+/*   Created: 2024/10/24 14:20:12 by mkoualil          #+#    #+#             */
+/*   Updated: 2024/11/03 21:41:32 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#ifndef HEADER_HARL
+#define HEADER_HARL
 
-Weapon::Weapon()
+#include <string>
+#include <iostream>
+
+class Harl
 {
+private:
+    void debug( void );
+    void info( void );
+    void warning( void );
+    void error( void );
+    
+public:
+    Harl(/* args */);
+    ~Harl();
+    void complain(std::string level );
+};
 
-}
-
-
-Weapon::Weapon(std::string s)
-{
-    type = s;
-}
-
-void Weapon::setType(std::string s)
-{
-    type = s;
-}
-
-const std::string& Weapon::getType() const
-{
-    return type;
-}
-
-Weapon::~Weapon()
-{
-}
+#endif

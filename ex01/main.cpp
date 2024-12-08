@@ -6,26 +6,20 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 15:51:53 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/10/23 18:17:07 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/06 20:54:15 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-// void foo()
-// {
-//     system("leaks Zombie");
-// }
-
 int main(void)
 {
-
     int n= 5;
-    // atexit(foo);
-    Zombie *z = zombieHorde(n, "hello");
+    Zombie *z = zombieHorde(n, "zombie");
     if (!z)
         return 1;
-    for(int i=0;i<n;i++)
+    
+    for(int i=0; i<n;i++)
     {
         z[i].announce();
     }

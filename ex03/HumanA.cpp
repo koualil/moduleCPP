@@ -6,16 +6,12 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 19:28:22 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/10/23 21:09:30 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/06 12:47:44 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-// HumanA::HumanA()
-// {
-    
-// }
 
 HumanA::HumanA(std::string n, Weapon& w):weapon(w), name(n){}
 
