@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 14:25:28 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/11/03 21:43:16 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/08 15:47:49 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define HEADER_FIXED
 
 #include <iostream>
+#include <cmath>
 
 class Fixed
 {
