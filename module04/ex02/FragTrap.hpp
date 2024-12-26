@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 17:39:05 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/22 16:25:58 by mkoualil         ###   ########.fr       */
+/*   Created: 2024/12/20 16:03:37 by mkoualil          #+#    #+#             */
+/*   Updated: 2024/12/21 21:28:26 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef HEADER_Frag
+#define HEADER_Frag
+
 #include "ClapTrap.hpp"
 
-int main(void)
+class FragTrap : public ClapTrap
 {
+private:
+    
+public:
+    FragTrap();
+    FragTrap(std::string n);
+    FragTrap(const FragTrap &copy);
+    ~FragTrap();
+    
+    FragTrap &operator=(const FragTrap &src);
 
-    ClapTrap clap("Clappy");
+    void attack(const std::string& target);
+    void highFivesGuys(void);
+};
 
-    clap.attack("c1");
-    clap.takeDamage(20);
-    clap.attack("c1");
-    clap.beRepaired(1);
-    clap.attack("c1");
-
-
-    return 0;
-}
-
+#endif

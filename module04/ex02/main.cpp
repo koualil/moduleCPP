@@ -6,23 +6,24 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 17:39:05 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/22 16:25:58 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/21 16:43:56 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main(void)
 {
+    // Test ScavTrap
+    ScavTrap scav("Guardian");
+    scav.attack("Enemy");
+    scav.guardGate();
 
-    ClapTrap clap("Clappy");
-
-    clap.attack("c1");
-    clap.takeDamage(20);
-    clap.attack("c1");
-    clap.beRepaired(1);
-    clap.attack("c1");
-
+    // Test FragTrap
+    FragTrap frag("Destroyer");
+    frag.attack("Villain");
+    frag.highFivesGuys();
 
     return 0;
 }

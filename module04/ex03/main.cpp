@@ -6,24 +6,22 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 17:39:05 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/22 16:25:58 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/22 18:43:48 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int main(void)
 {
+    // Test DiamondTrap
+    DiamondTrap diamond("Ultimate");
 
-    ClapTrap clap("Clappy");
-
-    clap.attack("c1");
-    clap.takeDamage(20);
-    clap.attack("c1");
-    clap.beRepaired(1);
-    clap.attack("c1");
+    diamond.attack("Enemy");
+    diamond.whoAmI();
 
 
+
+  
     return 0;
 }
-
