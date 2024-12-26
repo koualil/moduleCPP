@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/20 16:03:37 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/22 19:33:45 by mkoualil         ###   ########.fr       */
+/*   Created: 2024/12/23 00:19:52 by mkoualil          #+#    #+#             */
+/*   Updated: 2024/12/24 15:03:07 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER_Frag
-#define HEADER_Frag
+#ifndef ANIMAL
+#define ANIMAL
 
-#include "ClapTrap.hpp"
+#include "iostream"
+#include <string>
 
-class FragTrap : virtual public ClapTrap
+class Animal
 {
-private:
-    
+protected:
+    std::string* type;
 public:
-    FragTrap();
-    FragTrap(std::string n);
-    FragTrap(const FragTrap &copy);
-    FragTrap &operator=(const FragTrap &src);
+    Animal();
+    Animal( std::string type);
+    Animal(const Animal& copy);
+    virtual ~Animal();
 
-    void highFivesGuys(void);
-    
-    ~FragTrap();
+    // operator 
+    Animal &operator=(const Animal& src);
+   
+    virtual void makeSound() const = 0;
+    std::string getType() const;
 };
-
 
 #endif

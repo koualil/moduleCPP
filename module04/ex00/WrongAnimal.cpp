@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 17:05:01 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/23 17:55:02 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/24 13:01:10 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void WrongAnimal::makeSound() const
 
 WrongAnimal::~WrongAnimal()
 {
-    std::cout << "WrongAnimal Default destructor called" << std::endl;
+    std::cout << "WrongAnimal destructor called" << std::endl;
 }
 
 

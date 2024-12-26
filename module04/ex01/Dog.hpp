@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 17:39:05 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/22 18:43:48 by mkoualil         ###   ########.fr       */
+/*   Created: 2024/12/23 10:41:59 by mkoualil          #+#    #+#             */
+/*   Updated: 2024/12/24 10:27:10 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "DiamondTrap.hpp"
+#ifndef DOG
+#define DOG
+#include "Animal.hpp"
+#include "Brain.hpp"
 
-int main(void)
+class Dog : public Animal
 {
-    // Test DiamondTrap
-    DiamondTrap diamond("Ultimate");
+private:
+    Brain* brain;
+public:
+    Dog();
+    Dog(std::string type);
+    Dog(const Dog& src);
+    ~Dog();
 
-    diamond.attack("Enemy");
-    diamond.whoAmI();
+    Dog& operator=(const Dog& src);
+    void makeSound() const;
+};
 
-
-
-  
-    return 0;
-}
+#endif

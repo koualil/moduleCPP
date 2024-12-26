@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 17:01:49 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/23 17:54:18 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/24 13:01:10 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,5 @@ std::string WrongCat::getType() const
 
 WrongCat::~WrongCat()
 {
-    std::cout << "WrongCat Default destructor called" << std::endl;
+    std::cout << "WrongCat destructor called" << std::endl;
 }

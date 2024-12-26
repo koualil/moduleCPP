@@ -5,22 +5,36 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 17:39:05 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/22 18:20:59 by mkoualil         ###   ########.fr       */
+/*   Created: 2024/12/23 10:44:58 by mkoualil          #+#    #+#             */
+/*   Updated: 2024/12/24 16:43:57 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
 
+void foo()
+{
+    system("leaks Animal");
+}
 int main(void)
 {
-    ScavTrap scav("Guardian");
+    // atexit(foo);
+    
+    // Animal* animals[4];
 
-    scav.attack("Enemy");
-    scav.takeDamage(30);
-    scav.beRepaired(20);
-    scav.guardGate();
+    // for(int i=0;i<2;i++)
+    //     animals[i] = new Dog();
+    // for(int i=2;i<4;i++)
+    //     animals[i] = new Cat();
 
+     
+    // // end
+    // for(int i=3 ; i >= 0 ; i--)
+    //     delete animals[i];
+ 
+    Dog basic;
+    std::cout << "------------------" <<std::endl;
+    Dog tmp = basic;
     return 0;
 }
-

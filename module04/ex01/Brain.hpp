@@ -1,36 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/03 21:52:48 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/22 19:33:39 by mkoualil         ###   ########.fr       */
+/*   Created: 2024/12/24 10:10:11 by mkoualil          #+#    #+#             */
+/*   Updated: 2024/12/24 12:30:31 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER_SCAV
-#define HEADER_SCAV
+#ifndef BRAIN_HPP
+#define BRAIN_HPP
 
-#include "ClapTrap.hpp"
+#include <string>
+#include <iostream>
 
-class ScavTrap : virtual public ClapTrap
+class Brain
 {
 private:
-    /* data */
+    std::string ideas[100];
 public:
-    ScavTrap();
-    ScavTrap(std::string n);
-    ScavTrap(const ScavTrap &copy);
-    ~ScavTrap();
-    
-    ScavTrap &operator=(const ScavTrap &src);
-    
-    void guardGate();
+    Brain();
+    Brain(const Brain& brain);
+    ~Brain();
+
+    Brain& operator=(const Brain& brain);
 };
-
- 
-
 
 #endif

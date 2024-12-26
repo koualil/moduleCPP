@@ -5,26 +5,33 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/02 17:39:05 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/21 16:43:56 by mkoualil         ###   ########.fr       */
+/*   Created: 2024/12/23 10:44:58 by mkoualil          #+#    #+#             */
+/*   Updated: 2024/12/24 15:13:02 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
-#include "ScavTrap.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
 
+void foo()
+{
+    system("leaks Animal");
+}
 int main(void)
 {
-    // Test ScavTrap
-    ScavTrap scav("Guardian");
-    scav.attack("Enemy");
-    scav.guardGate();
+    // atexit(foo);
+    
+    Animal* animals[4];
 
-    // Test FragTrap
-    FragTrap frag("Destroyer");
-    frag.attack("Villain");
-    frag.highFivesGuys();
+    for(int i=0;i<2;i++)
+        animals[i] = new Dog();
+    for(int i=2;i<4;i++)
+        animals[i] = new Cat();
 
+     
+    // end
+    for(int i=3 ; i >= 0 ; i--)
+        delete animals[i];
+ 
     return 0;
 }
-

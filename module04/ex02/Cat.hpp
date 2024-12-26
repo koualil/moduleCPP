@@ -1,39 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/20 16:56:27 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/22 20:47:31 by mkoualil         ###   ########.fr       */
+/*   Created: 2024/12/23 10:20:17 by mkoualil          #+#    #+#             */
+/*   Updated: 2024/12/24 10:27:15 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HEADER_DIAMOND
-#define HEADER_DIAMOND
+#ifndef CAT
+#define CAT
+#include "Animal.hpp"
+#include "Brain.hpp"
 
-#include "ScavTrap.hpp"
-#include "FragTrap.hpp"
-
-class DiamondTrap : public  FragTrap, public ScavTrap
+class Cat : public Animal
 {
 private:
-    std::string Name;
-    
+    Brain* brain;
 public:
-    DiamondTrap();
-    DiamondTrap(const std::string& Name);
-    DiamondTrap(const DiamondTrap &copy);
-    ~DiamondTrap();
+    Cat();
+    Cat(std::string type);
+    Cat(const Cat& src);
+    ~Cat();
 
-    DiamondTrap &operator=(const DiamondTrap &src);
-
-    void attack(const std::string &target);
-    void whoAmI();
+    Cat& operator=(const Cat& src);
+    void makeSound() const;
 };
-
- 
-
 
 #endif

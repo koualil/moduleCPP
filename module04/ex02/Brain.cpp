@@ -1,51 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.cpp                                            :+:      :+:    :+:   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/23 10:20:56 by mkoualil          #+#    #+#             */
+/*   Created: 2024/12/24 10:30:55 by mkoualil          #+#    #+#             */
 /*   Updated: 2024/12/24 13:01:10 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Brain.hpp"
 
-#include "Cat.hpp"
-
-Cat::Cat()
+Brain::Brain()
 {
-    type = "Cat";
-    std::cout << "Cat default constructor called" << std::endl;
+    std::cout << "Brain default constructor called" << std::endl;
 }
 
-Cat::Cat(std::string type):Animal(type)
+Brain::Brain(const Brain& brain)
 {
-    std::cout << "Cat paramerized constructor called" << std::endl;
+    std::cout << "Brain Copy constructor called" << std::endl;
+    *this = brain;
 }
 
-Cat::Cat(const Cat& src):Animal(src)
+Brain& Brain::operator=(const Brain& brain)
 {
-    std::cout << "Cat Copy constructor called" << std::endl;
-    *this = src;  
-}
-
-Cat& Cat::operator=(const Cat& src)
-{
-    if (this != &src)
+    std::cout << "Brain assignment operator called" << std::endl;
+    if (this != &brain)
     {
-        Animal::operator=(src);
+        *this = brain;
     }
     return *this;
 }
 
-void Cat::makeSound() const
+Brain::~Brain()
 {
-    std::cout << "Miu Mui Mui" << std::endl;
-}
-
-
-Cat::~Cat()
-{
-    std::cout << "Cat destructor called" << std::endl;
+    std::cout << "Brain destructor called" << std::endl;
 }
