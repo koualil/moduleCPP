@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 10:20:17 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/23 17:56:31 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/26 15:25:46 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ private:
     
 public:
     Cat();
-    Cat(std::string type);
     Cat(const Cat& src);
     ~Cat();
 

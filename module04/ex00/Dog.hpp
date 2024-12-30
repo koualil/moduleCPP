@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 10:41:59 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/23 17:56:43 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/26 15:26:08 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ private:
     
 public:
     Dog();
-    Dog(std::string type);
     Dog(const Dog& src);
     ~Dog();
 

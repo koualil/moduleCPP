@@ -6,20 +6,16 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 10:44:58 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/23 17:40:38 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:13:38 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 #include "Cat.hpp"
 #include "WrongCat.hpp"
-void foo()
-{
-    system("leaks Animal");
-}
+
 int main(void)
 {
-    // atexit(foo);
 {   const Animal* meta = new Animal();
     const Animal* j = new Dog();
     const Animal* i = new Cat();

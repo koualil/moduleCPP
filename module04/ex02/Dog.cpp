@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 10:41:57 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/24 13:01:10 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/30 14:54:25 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,6 @@ Dog::Dog()
     brain = new Brain;
     *type = "Dog";
     std::cout << "Dog default constructor called" << std::endl;
-}
-
-Dog::Dog(std::string type):Animal(type)
-{
-    brain = new Brain;
-    std::cout << "Dog paramerized constructor called" << std::endl;
 }
 
 Dog::Dog(const Dog& src):Animal(src)
@@ -42,7 +36,7 @@ Dog& Dog::operator=(const Dog& src)
 
 void Dog::makeSound() const
 {
-    std::cout << "oh oh oh oh" << std::endl;
+    std::cout << "woof woof woof woof" << std::endl;
 }
 
 

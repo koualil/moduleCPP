@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 10:20:17 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/24 10:27:15 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/30 13:34:34 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ private:
     Brain* brain;
 public:
     Cat();
-    Cat(std::string type);
     Cat(const Cat& src);
     ~Cat();
 

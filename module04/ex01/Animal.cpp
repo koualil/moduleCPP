@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 00:20:16 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/24 16:41:05 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/30 14:31:25 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,10 @@ Animal &Animal::operator=(const Animal& src)
 std::string Animal::getType() const
 {
     return *type;
+}
+void Animal::setAnimal(const std::string& type_) const
+{
+    *type = type_;
 }
 
 void Animal::makeSound() const

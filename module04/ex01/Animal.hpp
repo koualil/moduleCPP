@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 00:19:52 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/24 12:03:26 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/30 14:17:14 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ public:
    
     virtual void makeSound() const;
     std::string getType() const;
+    void setAnimal(const std::string&) const;
 };
 
 #endif

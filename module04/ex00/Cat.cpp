@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 10:20:56 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/24 13:01:10 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/26 15:25:52 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,6 @@ Cat::Cat()
 {
     type = "Cat";
     std::cout << "Cat default constructor called" << std::endl;
-}
-
-Cat::Cat(std::string type):Animal(type)
-{
-    std::cout << "Cat paramerized constructor called" << std::endl;
 }
 
 Cat::Cat(const Cat& src):Animal(src)
@@ -41,7 +36,7 @@ Cat& Cat::operator=(const Cat& src)
 
 void Cat::makeSound() const
 {
-    std::cout << "Miu Mui Mui" << std::endl;
+    std::cout << "mee-owww!" << std::endl;
 }
 
 

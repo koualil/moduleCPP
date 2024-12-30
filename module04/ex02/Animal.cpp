@@ -6,7 +6,7 @@
 /*   By: mkoualil <mkoualil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/23 00:20:16 by mkoualil          #+#    #+#             */
-/*   Updated: 2024/12/24 15:05:00 by mkoualil         ###   ########.fr       */
+/*   Updated: 2024/12/30 15:12:41 by mkoualil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,6 @@ std::string Animal::getType() const
 
 Animal::~Animal()
 {
-    delete type;
     std::cout << "Animal destructor called" << std::endl;
+    delete type;
 }
